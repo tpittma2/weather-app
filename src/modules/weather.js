@@ -1,4 +1,4 @@
-import {kelvinToCelsius, kelvinToFahrenheit} from 'temperature';
+import {kelvinToCelsius, kelvinToFahrenheit} from './utils';
 
 export default class Weather {
     date;

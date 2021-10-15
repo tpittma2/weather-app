@@ -14,7 +14,7 @@ export default class Weather {
     rainChance;
     humidity;
     wind;
-    pressure;
+    pressure; 
     visibility;
     uvIndex;
 

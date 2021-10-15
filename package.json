@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tpittma2/weather-app#readme",
   "devDependencies": {
+    "eslint": "^8.0.1",
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.0"
   },

@@ -1,4 +1,4 @@
-import weatherInterface from './modules/OpenWeatherMapInterface';
+import weatherInterface from './modules/openWeatherMapInterface';
 
 
 async function test() {

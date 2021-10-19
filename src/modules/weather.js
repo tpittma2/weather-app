@@ -2,9 +2,10 @@ import {kelvinToCelsius, kelvinToFahrenheit} from './utils';
 
 export default class Weather {
     date;
+    location;
     name;
     description;
-    iconURL;
+    iconID;
     temperatureKelvin;
     feelsLikeKelvin;
     highKelvin;
@@ -13,10 +14,13 @@ export default class Weather {
     sunset;
     rainChance;
     humidity;
-    wind;
+    windSpeed;
+    windDeg;
     pressure; 
     visibility;
     uvIndex;
+    latitude;
+    longitude;
 
     #getTemp(kelvin, unit) {
         switch(unit) {

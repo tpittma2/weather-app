@@ -4,10 +4,16 @@
  * @param {number} unixNo 
  * @returns {Date}
  */
-function unixUTCToDate(unixNo) {
+ export function unixUTCToDate(unixNo) {
     if (!unixNo)
         return null;
     return new Date(unixNo * 1000);
+}
+
+export function toPercent(decimal, fixedPercent = true) {
+    if(!decimal || isNaN(decimal)) return 0;
+    let percent = decimal*100;
+    return fixedPercent ? percent.toFixed() : percent;
 }
 
 /** 
@@ -16,7 +22,7 @@ function unixUTCToDate(unixNo) {
  * @param celcius number
  * @returns {number}
  */
-function celsiusToFahrenheit(celsius) {
+ export function celsiusToFahrenheit(celsius) {
     return celsius * 9 / 5 + 32;
 }
 
@@ -26,7 +32,7 @@ function celsiusToFahrenheit(celsius) {
  * @param celsius number
  * @returns {*}
  */
-function celsiusToKelvin(celsius) {
+ export function celsiusToKelvin(celsius) {
     return celsius + 273.15;
 }
 
@@ -36,7 +42,7 @@ function celsiusToKelvin(celsius) {
  * @param fahrenheit number
  * @returns {number}
  */
-function fahrenheitToCelsius(fahrenheit) {
+ export function fahrenheitToCelsius(fahrenheit) {
     return (fahrenheit - 32) * 5 / 9;
 }
 
@@ -46,7 +52,7 @@ function fahrenheitToCelsius(fahrenheit) {
  * @param fahrenheit number
  * @returns {number}
  */
-function fahrenheitToKelvin(fahrenheit) {
+ export function fahrenheitToKelvin(fahrenheit) {
     return (fahrenheit - 32) * 5 / 9 + 273.15;
 }
 
@@ -56,7 +62,7 @@ function fahrenheitToKelvin(fahrenheit) {
  * @param kelvin number
  * @returns {number}
  */
-function kelvinToCelsius(kelvin) {
+ export function kelvinToCelsius(kelvin) {
     return kelvin - 273.15;
 }
 
@@ -66,8 +72,7 @@ function kelvinToCelsius(kelvin) {
  * @param kelvin number
  * @returns {number}
  */
-function kelvinToFahrenheit(kelvin) {
+export function kelvinToFahrenheit(kelvin) {
     return (kelvin - 273.15) * 9 / 5 + 32;
 }
 
-export { unixUTCToDate }

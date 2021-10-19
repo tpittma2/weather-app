@@ -1,8 +1,7 @@
-import Weather from './weather';
-import Alert from './alert';
-
 export default class FullWeather {
-    currentWeather;
-    hourlyWeather = [];
-    dailyWeather = [];
+  constructor() {
+    this.currentWeather = null;
+    this.hourlyWeather = [];
+    this.dailyWeather = [];
+  }
 }

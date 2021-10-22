@@ -1,43 +1,43 @@
 {
-	"coord": {
-		"lon": -85.1455,
-		"lat": 33.7212
-	},
-	"weather": [
-		{
-			"id": 802,
-			"main": "Clouds",
-			"description": "scattered clouds",
-			"icon": "03d"
-		}
-	],
-	"base": "stations",
-	"main": {
-		"temp": 300.01,
-		"feels_like": 301.4,
-		"temp_min": 298.42,
-		"temp_max": 302.05,
-		"pressure": 1016,
-		"humidity": 65
-	},
-	"visibility": 10000,
-	"wind": {
-		"speed": 0,
-		"deg": 0
-	},
-	"clouds": {
-		"all": 40
-	},
-	"dt": 1634324170,
-	"sys": {
-		"type": 2,
-		"id": 2006676,
-		"country": "US",
-		"sunrise": 1634298326,
-		"sunset": 1634339207
-	},
-	"timezone": -14400,
-	"id": 4184222,
-	"name": "Bremen",
-	"cod": 200
+  "coord": {
+    "lon": -85.1455,
+    "lat": 33.7212
+  },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 300.01,
+    "feels_like": 301.4,
+    "temp_min": 298.42,
+    "temp_max": 302.05,
+    "pressure": 1016,
+    "humidity": 65
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 0,
+    "deg": 0
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1634324170,
+  "sys": {
+    "type": 2,
+    "id": 2006676,
+    "country": "US",
+    "sunrise": 1634298326,
+    "sunset": 1634339207
+  },
+  "timezone": -14400,
+  "id": 4184222,
+  "name": "Bremen",
+  "cod": 200
 }

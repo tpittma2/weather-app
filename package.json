@@ -17,14 +17,19 @@
   },
   "homepage": "https://github.com/tpittma2/weather-app#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
+    "prettier": "2.4.1",
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.0"
   },
   "dependencies": {
     "dateformat": "^5.0.2",
-    "temperature": "^1.0.3"
+    "temperature": "^1.0.3",
+    "terser": "^5.9.0"
   }
 }

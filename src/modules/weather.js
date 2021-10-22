@@ -1,4 +1,4 @@
-import { kelvinToCelsius, kelvinToFahrenheit } from './utils';
+import { kelvinToCelsius, kelvinToFahrenheit } from "./utils";
 
 export default class Weather {
   constructor() {
@@ -27,9 +27,9 @@ export default class Weather {
   // eslint-disable-next-line class-methods-use-this
   getTemp(kelvin, unit) {
     switch (unit) {
-      case unit.startsWith('C'):
+      case unit.startsWith("C"):
         return kelvinToCelsius(kelvin);
-      case unit.startsWith('F'):
+      case unit.startsWith("F"):
         return kelvinToFahrenheit(kelvin);
       default:
         return kelvin;
@@ -41,11 +41,11 @@ export default class Weather {
   }
 
   getTemperatureCelcius() {
-    return this.getTemp(this.temperatureKelvin, 'C');
+    return this.getTemp(this.temperatureKelvin, "C");
   }
 
   getTemperatureFahrenheit() {
-    return this.getTemp(this.temperatureKelvin, 'F');
+    return this.getTemp(this.temperatureKelvin, "F");
   }
 
   getFeelsLike(unit) {
@@ -53,11 +53,11 @@ export default class Weather {
   }
 
   getFeelsLikeCelcius() {
-    return this.getTemp(this.feelsLikeKelvin, 'C');
+    return this.getTemp(this.feelsLikeKelvin, "C");
   }
 
   getFeelsLikeFahrenheit() {
-    return this.getTemp(this.feelsLikeKelvin, 'F');
+    return this.getTemp(this.feelsLikeKelvin, "F");
   }
 
   getHigh(unit) {
@@ -65,11 +65,11 @@ export default class Weather {
   }
 
   getHighCelcius() {
-    return this.getTemp(this.highKelvin, 'C');
+    return this.getTemp(this.highKelvin, "C");
   }
 
   getHighFahrenheit() {
-    return this.getTemp(this.highKelvin, 'F');
+    return this.getTemp(this.highKelvin, "F");
   }
 
   getLow(unit) {
@@ -77,10 +77,10 @@ export default class Weather {
   }
 
   getLowCelcius() {
-    return this.getTemp(this.lowKelvin, 'C');
+    return this.getTemp(this.lowKelvin, "C");
   }
 
   getLowFahrenheit() {
-    return this.getTemp(this.lowKelvin, 'F');
+    return this.getTemp(this.lowKelvin, "F");
   }
 }

@@ -1,8 +1,8 @@
-import Weather from './weather';
-import FullWeather from './full-weather';
-import { unixUTCToDate, toPercent } from './utils';
-import weatherInterface from './openWeatherMapInterface';
-import Alert from './alert';
+import Weather from "./weather";
+import FullWeather from "./full-weather";
+import { unixUTCToDate, toPercent } from "./utils";
+import weatherInterface from "./openWeatherMapInterface";
+import Alert from "./alert";
 
 export default (() => {
   function mapWeatherDescription(weatherObj, openWeatherMapObj) {
@@ -107,17 +107,26 @@ export default (() => {
   }
 
   async function getWeather(keywords) {
-    let currentWeatherResponse = await weatherInterface.getCurrentWeather(keywords);
-    if (currentWeatherResponse.cod === '404' && !keywords.replace(' ', '').toUpperCase().endsWith(',US')) {
-      currentWeatherResponse = await weatherInterface.getCurrentWeather(`${keywords},US`);
+    let currentWeatherResponse = await weatherInterface.getCurrentWeather(
+      keywords
+    );
+    if (
+      currentWeatherResponse.cod === "404" &&
+      !keywords.replace(" ", "").toUpperCase().endsWith(",US")
+    ) {
+      currentWeatherResponse = await weatherInterface.getCurrentWeather(
+        `${keywords},US`
+      );
     }
 
     const weatherObj = mapCurrentWeather(currentWeatherResponse);
     console.log(weatherObj);
 
-    if (!weatherObj.latitude || !weatherObj.longitude) throw new Error(`Could not find city ${keywords}`);
+    if (!weatherObj.latitude || !weatherObj.longitude)
+      throw new Error(`Could not find city ${keywords}`);
     const fullWeatherResponse = await weatherInterface.getFullWeather(
-      weatherObj.latitude, weatherObj.longitude,
+      weatherObj.latitude,
+      weatherObj.longitude
     );
 
     console.log(fullWeatherResponse);
